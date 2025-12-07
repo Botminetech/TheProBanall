@@ -1,0 +1,40 @@
+{
+  "name": "ShreeBanallBot",
+  "description": "The power full banall unbanall bot.",
+  "repository": "https://github.com/Botminetech/Banall",
+  "keywords": [
+    "telegram",
+    "pyrogram",
+    "banall",
+    "mongo",
+    "Radhe"
+  ],
+  "stack": "heroku-22",
+  "env": {
+    "API_ID": {
+      "description": "Get it from https://my.telegram.org/auth",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Get it from https://my.telegram.org/auth",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Create via @BotFather",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Bot Owner numeric Telegram ID",
+      "required": true
+    },
+    "MONGO_URL": {
+      "description": "MongoDB Atlas connection string",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
